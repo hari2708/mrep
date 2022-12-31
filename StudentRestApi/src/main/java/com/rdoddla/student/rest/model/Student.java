@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class Student {
 	
 	@Id
-	@GeneratedValue(strategy =GenerationType.IDENTITY )
+	@GeneratedValue(strategy =GenerationType.AUTO )
 	private long sid;
 	private String sname;
 	private String city;
