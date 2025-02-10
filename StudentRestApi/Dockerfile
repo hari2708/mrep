@@ -5,8 +5,8 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 FROM openjdk:11-jre-slim
-COPY --from-build /app/target/yourapp.jar ./yourapp.jar
+COPY --from-build /app/target/Student*.jar ./app.jar
 EXPOSE 8080
-CMD ["java", "jar", "yourap.jar"]
+CMD ["java", "jar", "app.jar"]
 
 
