@@ -26,7 +26,7 @@ jobs:
         with:
           context: .
           push: true          
-          tags: hari2708/studentrep:$BUILD_ID
+          tags: hari2708/studentrep:${{ github.run_id }}
 
   deploy:
     runs-on: ubuntu-latest
